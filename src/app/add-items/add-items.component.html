@@ -1,0 +1,101 @@
+<h1 class="mb-16 mx-auto w-full max-w-xl" >Add Items</h1> 
+
+<div class="w-full max-w-xl mx-auto">
+  <form  [formGroup]="addItemsForm" class="px-8 pt-6 pb-8 mb-4" (ngSubmit)="onSubmit()">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm" for="itemname">
+        Item Name
+      </label>
+      <mat-form-field appearance="outline">
+        <input
+          formControlName="itemName"
+          matInput
+          type="text"
+          id="itemName"
+          placeholder="Enter an item"
+          class="w-full"
+        />
+        <mat-error
+          *ngIf="
+          controlIsError('itemName')
+          "
+          class="text-sm">Please enter an item</mat-error
+        >
+      </mat-form-field> </div> 
+
+    <!-- Quantity -->
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm" for="amount">
+        Quantity
+      </label>
+      <mat-form-field appearance="outline">
+        <input
+          formControlName="amount"
+          matInput
+          type="number"
+          id="amount"
+          placeholder="Enter an amount" 
+          class="w-full"
+        />
+        <mat-error
+          *ngIf="
+          controlIsError('amount')
+          "
+           class="text-sm" >Please enter a quantity</mat-error
+        >
+      </mat-form-field>
+    
+    </div>
+
+      <!-- Price -->
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm" for="price">
+        Price
+      </label>
+      <mat-form-field appearance="outline">
+        <input
+          formControlName="price"
+          matInput
+          type="number"
+          id="price"
+          placeholder="Enter a price" 
+          class="w-full"
+        />
+        <mat-error
+          *ngIf="
+            controlIsError('price')
+          "
+           class="text-sm" >Please enter a price</mat-error
+        >
+      </mat-form-field>
+    
+    </div>
+
+        <div class="flex items-center justify-start">
+            <button class="flex justify-start items-center font-medium text-sm btnColor" type="submit">
+             Add item
+            </button>
+        </div>
+
+  </form>
+</div>
+
+   <!-- <input formControlName="itemName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:outline-secondary focus:shadow-secondary" id="itemName" type="text" placeholder="Add an item" 
+      >
+
+      <span *ngIf="
+      (addItemsForm.get('itemName')?.touched ||
+        submitted) &&
+      addItemsForm.get('itemName')?.errors?.['required']
+    " class="error mt-2 text-sm text-red-600 dark:text-red-500 font-medium">Please enter an item</span>--> 
+
+
+
+          <!-- <input formControlName="amount" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-1 focus:outline-secondary focus:shadow-secondary" id="amount" type="number" placeholder="Enter an amount" 
+      >
+     
+      <p *ngIf="
+      (addItemsForm.get('amount')?.touched ||
+      submitted) &&
+    addItemsForm.get('amount')?.errors?.['required']
+    " class="error mt-2 text-sm text-red-600 font-medium">Please enter an amount</p> -->

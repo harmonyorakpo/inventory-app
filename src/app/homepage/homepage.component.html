@@ -1,0 +1,36 @@
+<!-- Main div -->
+<div class="mx-auto mt-10 max-w-3xl">
+  <div class="flex items-center justify-between mb-16">
+    <div>
+      <h1><strong>InventoryApp</strong></h1>
+    </div>
+    <nav>
+      <a class="nav-style pl-10" routerLink="/sell" routerLinkActive="active" >Sell</a>
+      <a class="nav-style pl-10" routerLink="/stock" routerLinkActive="active" >Stock</a>
+      <a class="nav-style pl-10" routerLink="/add-items" routerLinkActive="active">Add item</a>
+    </nav>
+  </div>
+
+  <!-- Inventory list -->
+  <div class="grid grid-cols-4 px-4 py-2 font-medium">
+    <div class="col-span-2"> <h3>Item</h3> </div>
+    <div><h3>Quantity</h3></div>
+    <div><h3>Price</h3></div>
+  </div>
+  <div class="bg-card mb-4 p-4 rounded-md grid grid-cols-4" *ngFor="let items of inventoryList">
+   
+      <div class="col-span-2">
+        <h4>{{items.Item}}</h4>
+      </div>
+  
+      <div class="pl-7" >
+        <h4>{{items.Quantity}}</h4>
+      </div>
+  
+      <div>
+        <h4>{{items.Price}}</h4>
+      </div>
+   
+    </div>
+
+</div>

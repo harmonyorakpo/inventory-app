@@ -1,0 +1,9 @@
+h1 {
+  font-size: 32px;
+  color: #1a78c2;
+}
+
+.nav-style {
+  @apply cursor-pointer text-textP font-medium hover:text-secondary;
+  color: #5b5b5b;
+}
