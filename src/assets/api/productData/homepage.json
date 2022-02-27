@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "Item": "Men's Business Shoes",
+    "Quantity": 4,
+    "Price": "N4,500.00"
+  },
+  {
+    "id": 2,
+    "Item": "Oriamo Freepods",
+    "Quantity": 13,
+    "Price": "N15,300.00"
+  },
+  {
+    "id": 3,
+    "Item": "Dana Power bank",
+    "Quantity": 0,
+    "Price": "N3,655.00"
+  },
+  {
+    "id": 4,
+    "Item": "M40 Ulta-thin Wireless Mouse",
+    "Quantity": 9,
+    "Price": "N2,785.00"
+  },
+  {
+    "id": 5,
+    "Item": "Men's Tracksuit Set Joggers",
+    "Quantity": 5,
+    "Price": "N6,430.00"
+  },
+  {
+    "id": 6,
+    "Item": "Apple series 3 watch",
+    "Quantity": 0,
+    "Price": "N30,000.00"
+  },
+  {
+    "id": 7,
+    "Item": "Microsoft mouse",
+    "Quantity": 0,
+    "Price": "N69,000.00"
+  },
+  {
+    "id": 8,
+    "Item": "Red polo",
+    "Quantity": 2,
+    "Price": "N12,000.00"
+  }
+]

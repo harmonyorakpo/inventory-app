@@ -1,4 +1,4 @@
-export interface InventoryList{
+export interface Product{
   id: number,
   Item: string,
   Quantity: number,

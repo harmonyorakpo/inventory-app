@@ -1,1 +1,55 @@
-<p>sell works!</p>
+<h1 class="mb-16 mx-auto w-full max-w-xl">Sell Items</h1>
+
+<div class="w-full max-w-xl mx-auto">
+  <form
+    [formGroup]="sellItemsForm"
+    class="px-8 pt-6 pb-8 mb-4"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm" for="itemname">
+        Item Name
+      </label>
+      <mat-form-field appearance="outline">
+        <input
+          formControlName="itemName"
+          matInput
+          type="text"
+          id="itemName"
+          placeholder="Enter an item"
+          class="w-full"
+        />
+        <mat-error *ngIf="controlIsError('itemName')" class="text-sm"
+          >Please enter an item</mat-error
+        >
+      </mat-form-field>
+    </div>
+
+    <!-- Quantity -->
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm" for="amount"> Quantity </label>
+      <mat-form-field appearance="outline">
+        <input
+          formControlName="amount"
+          matInput
+          type="number"
+          id="amount"
+          placeholder="Enter an amount"
+          class="w-full"
+        />
+        <mat-error *ngIf="controlIsError('amount')" class="text-sm"
+          >Please enter a quantity</mat-error
+        >
+      </mat-form-field>
+    </div>
+
+    <div class="flex items-center justify-start">
+      <button
+        class="flex justify-start items-center font-medium text-sm btnColor"
+        type="submit"
+      >
+        Sell item
+      </button>
+    </div>
+  </form>
+</div>
